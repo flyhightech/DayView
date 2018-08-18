@@ -11,6 +11,62 @@
         <customView id="c22-O7-iKe">
             <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dhh-7o-0Tf">
+                    <rect key="frame" x="35" y="106" width="54" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Friday" id="c9g-JU-dmg">
+                        <font key="font" size="15" name="Copperplate"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zpC-Qg-H3x">
+                    <rect key="frame" x="87" y="4" width="32" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="100" id="aSr-MA-ff1">
+                        <font key="font" size="15" name="Copperplate"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kN6-7z-1WH">
+                    <rect key="frame" x="30" y="30" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="6h0-29-NjJ"/>
+                        <constraint firstAttribute="height" constant="65" id="QhQ-MN-Awh"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Clear" id="x9G-Ex-l0L"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-r1-0Ye">
+                    <rect key="frame" x="6" y="4" width="32" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="100" id="7Iv-jn-V0X">
+                        <font key="font" size="15" name="Copperplate"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dhh-7o-0Tf" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="0T7-El-UNb"/>
+                <constraint firstItem="dhh-7o-0Tf" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="1XO-sP-mKr"/>
+                <constraint firstAttribute="bottom" secondItem="7Wt-r1-0Ye" secondAttribute="bottom" constant="4" id="4Pn-vS-7Fk"/>
+                <constraint firstAttribute="trailing" secondItem="zpC-Qg-H3x" secondAttribute="trailing" constant="8" id="50n-2f-gfH"/>
+                <constraint firstItem="7Wt-r1-0Ye" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="c0v-SS-7lc"/>
+                <constraint firstItem="kN6-7z-1WH" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="eRx-Cs-Zs3"/>
+                <constraint firstAttribute="bottom" secondItem="zpC-Qg-H3x" secondAttribute="bottom" constant="4" id="sWg-Bm-GMq"/>
+                <constraint firstItem="kN6-7z-1WH" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="say-Tl-d29"/>
+            </constraints>
         </customView>
+        <collectionViewItem id="0fH-DX-8XB" customClass="WeatherCell" customModule="DayView" customModuleProvider="target">
+            <connections>
+                <outlet property="cellDate" destination="dhh-7o-0Tf" id="uqy-ar-DuB"/>
+                <outlet property="highTemp" destination="7Wt-r1-0Ye" id="hdu-3c-HRw"/>
+                <outlet property="lowTemp" destination="zpC-Qg-H3x" id="99j-5V-cmC"/>
+                <outlet property="view" destination="c22-O7-iKe" id="1su-xF-Wrm"/>
+                <outlet property="weatherCellImage" destination="kN6-7z-1WH" id="s7g-9Q-lRc"/>
+            </connections>
+        </collectionViewItem>
     </objects>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+    </resources>
 </document>

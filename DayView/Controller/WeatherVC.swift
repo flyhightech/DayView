@@ -23,7 +23,8 @@ class WeatherVC: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionView.dataSource = self
+        collectionView.delegate = self 
         
     }
     
@@ -39,4 +40,36 @@ class WeatherVC: NSViewController {
 
 
 }
+
+extension WeatherVC: NSCollectionViewDelegate, NSCollectionViewDataSource, NSCollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let forecastItem = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "WeatherCell"), for: indexPath)
+        
+        return forecastItem
+    }
+    
+    func numberOfSections(in collectionView: NSCollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 7 //Because there are seven days in the week...duh! lol
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
+        return NSSize(width: 125, height: 125)
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
 

@@ -797,7 +797,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="360" height="150"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView id="3GS-w5-JYe">
+                                        <collectionView selectable="YES" allowsEmptySelection="NO" id="3GS-w5-JYe">
                                             <rect key="frame" x="0.0" y="0.0" width="360" height="158"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" scrollDirection="horizontal" id="eOI-K4-bOP">
