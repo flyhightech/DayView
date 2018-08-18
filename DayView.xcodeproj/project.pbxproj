@@ -11,6 +11,8 @@
 		A1B31E83212641B40046FD68 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B31E82212641B40046FD68 /* WeatherVC.swift */; };
 		A1B31E85212641BC0046FD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B31E84212641BC0046FD68 /* Assets.xcassets */; };
 		A1B31E88212641BC0046FD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B31E86212641BC0046FD68 /* Main.storyboard */; };
+		A1B62E6C2127C84000974337 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B62E6B2127C84000974337 /* WeatherCell.xib */; };
+		A1B62E6E2127C8AA00974337 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B62E6D2127C8AA00974337 /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A1B31E87212641BC0046FD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1B31E89212641BC0046FD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B31E8A212641BC0046FD68 /* DayView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DayView.entitlements; sourceTree = "<group>"; };
+		A1B62E6B2127C84000974337 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		A1B62E6D2127C8AA00974337 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +57,48 @@
 		A1B31E7F212641B40046FD68 /* DayView */ = {
 			isa = PBXGroup;
 			children = (
+				A1B62E6A2127C7FE00974337 /* Xibs */,
+				A1B62E672127C7BE00974337 /* Model */,
+				A1B62E682127C7C800974337 /* View */,
+				A1B62E692127C7CF00974337 /* Controller */,
 				A1B31E80212641B40046FD68 /* AppDelegate.swift */,
-				A1B31E82212641B40046FD68 /* WeatherVC.swift */,
 				A1B31E84212641BC0046FD68 /* Assets.xcassets */,
 				A1B31E86212641BC0046FD68 /* Main.storyboard */,
 				A1B31E89212641BC0046FD68 /* Info.plist */,
 				A1B31E8A212641BC0046FD68 /* DayView.entitlements */,
 			);
 			path = DayView;
+			sourceTree = "<group>";
+		};
+		A1B62E672127C7BE00974337 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1B62E682127C7C800974337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1B62E6D2127C8AA00974337 /* WeatherCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1B62E692127C7CF00974337 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1B31E82212641B40046FD68 /* WeatherVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A1B62E6A2127C7FE00974337 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A1B62E6B2127C84000974337 /* WeatherCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +161,7 @@
 			files = (
 				A1B31E85212641BC0046FD68 /* Assets.xcassets in Resources */,
 				A1B31E88212641BC0046FD68 /* Main.storyboard in Resources */,
+				A1B62E6C2127C84000974337 /* WeatherCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +174,7 @@
 			files = (
 				A1B31E83212641B40046FD68 /* WeatherVC.swift in Sources */,
 				A1B31E81212641B40046FD68 /* AppDelegate.swift in Sources */,
+				A1B62E6E2127C8AA00974337 /* WeatherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

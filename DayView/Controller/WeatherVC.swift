@@ -9,11 +9,22 @@
 import Cocoa
 
 class WeatherVC: NSViewController {
-
+    
+//    Outlets
+    
+    @IBOutlet weak var dateLbl: NSTextField!
+    @IBOutlet weak var tempLbl: NSTextField!
+    @IBOutlet weak var locationLbl: NSTextField!
+    @IBOutlet weak var weatherImage: NSImageView!
+    @IBOutlet weak var weatherConditionLbl: NSTextField!
+    @IBOutlet weak var collectionView: NSCollectionView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewDidAppear() {
