@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4993BEDBEF0A353DC5C5775F /* Pods_DayView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8ACB48585182F9781D9916 /* Pods_DayView.framework */; };
+		A12B7DC9213895E400F2FFBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B7DC8213895E400F2FFBD /* Constants.swift */; };
 		A1B31E81212641B40046FD68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B31E80212641B40046FD68 /* AppDelegate.swift */; };
 		A1B31E83212641B40046FD68 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B31E82212641B40046FD68 /* WeatherVC.swift */; };
 		A1B31E85212641BC0046FD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B31E84212641BC0046FD68 /* Assets.xcassets */; };
 		A1B31E88212641BC0046FD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B31E86212641BC0046FD68 /* Main.storyboard */; };
 		A1B62E6C2127C84000974337 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B62E6B2127C84000974337 /* WeatherCell.xib */; };
 		A1B62E6E2127C8AA00974337 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B62E6D2127C8AA00974337 /* WeatherCell.swift */; };
+		A1B97E732138A42900C866BA /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B97E722138A42900C866BA /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172CBEF2C15F5E4C8FCB7E77 /* Pods-DayView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayView/Pods-DayView.debug.xcconfig"; sourceTree = "<group>"; };
+		3A8ACB48585182F9781D9916 /* Pods_DayView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12B7DC8213895E400F2FFBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1B31E7D212641B40046FD68 /* DayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B31E80212641B40046FD68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B31E82212641B40046FD68 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
@@ -25,6 +31,8 @@
 		A1B31E8A212641BC0046FD68 /* DayView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DayView.entitlements; sourceTree = "<group>"; };
 		A1B62E6B2127C84000974337 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 		A1B62E6D2127C8AA00974337 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		A1B97E722138A42900C866BA /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		EB3C009B4BD2A084E3485667 /* Pods-DayView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayView/Pods-DayView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +40,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4993BEDBEF0A353DC5C5775F /* Pods_DayView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79858712C7143AEC0D3A9A86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A8ACB48585182F9781D9916 /* Pods_DayView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12B7DC7213895AF00F2FFBD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A12B7DC8213895E400F2FFBD /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A1B31E74212641B40046FD68 = {
 			isa = PBXGroup;
 			children = (
 				A1B31E7F212641B40046FD68 /* DayView */,
 				A1B31E7E212641B40046FD68 /* Products */,
+				F2AD8ABBD686BC3D8D8AB307 /* Pods */,
+				79858712C7143AEC0D3A9A86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +84,8 @@
 		A1B31E7F212641B40046FD68 /* DayView */ = {
 			isa = PBXGroup;
 			children = (
+				A1B97E712138A39500C866BA /* Services */,
+				A12B7DC7213895AF00F2FFBD /* Utilities */,
 				A1B62E6A2127C7FE00974337 /* Xibs */,
 				A1B62E672127C7BE00974337 /* Model */,
 				A1B62E682127C7C800974337 /* View */,
@@ -101,6 +130,23 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
+		A1B97E712138A39500C866BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1B97E722138A42900C866BA /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2AD8ABBD686BC3D8D8AB307 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				172CBEF2C15F5E4C8FCB7E77 /* Pods-DayView.debug.xcconfig */,
+				EB3C009B4BD2A084E3485667 /* Pods-DayView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B31E8D212641BC0046FD68 /* Build configuration list for PBXNativeTarget "DayView" */;
 			buildPhases = (
+				A66FA343FF9BE4DA94BAEA29 /* [CP] Check Pods Manifest.lock */,
 				A1B31E79212641B40046FD68 /* Sources */,
 				A1B31E7A212641B40046FD68 /* Frameworks */,
 				A1B31E7B212641B40046FD68 /* Resources */,
+				65547E14D4C79C8CFF1EE81E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,14 +215,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65547E14D4C79C8CFF1EE81E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DayView/Pods-DayView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayView/Pods-DayView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66FA343FF9BE4DA94BAEA29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1B31E79212641B40046FD68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B97E732138A42900C866BA /* WeatherService.swift in Sources */,
 				A1B31E83212641B40046FD68 /* WeatherVC.swift in Sources */,
 				A1B31E81212641B40046FD68 /* AppDelegate.swift in Sources */,
 				A1B62E6E2127C8AA00974337 /* WeatherCell.swift in Sources */,
+				A12B7DC9213895E400F2FFBD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +398,11 @@
 		};
 		A1B31E8E212641BC0046FD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172CBEF2C15F5E4C8FCB7E77 /* Pods-DayView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DayView/DayView.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 44XL6DX4WB;
@@ -320,15 +413,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.flyhightech.DayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		A1B31E8F212641BC0046FD68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3C009B4BD2A084E3485667 /* Pods-DayView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DayView/DayView.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 44XL6DX4WB;
@@ -339,6 +435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.flyhightech.DayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

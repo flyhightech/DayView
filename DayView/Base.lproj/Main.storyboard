@@ -799,7 +799,7 @@
                                     <subviews>
                                         <collectionView id="3GS-w5-JYe">
                                             <rect key="frame" x="0.0" y="0.0" width="360" height="158"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" scrollDirection="horizontal" id="eOI-K4-bOP">
                                                 <size key="itemSize" width="125" height="125"/>
                                                 <edgeInsets key="sectionInset" left="10" right="10" top="0.0" bottom="0.0"/>

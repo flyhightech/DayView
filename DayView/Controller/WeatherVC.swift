@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import Alamofire
+
 
 class WeatherVC: NSViewController {
     
